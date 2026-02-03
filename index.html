@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>.NET Backend Developer Portfolio — Gokul KG</title>
+  <meta name="description" content="Premium .NET Core backend developer portfolio showcasing enterprise-grade skills, projects and professional experience." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-trail-container" id="cursor-trail-container"></div>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo-text">Developer Portfolio<span class="accent-dot">.</span></span>
+      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+              <i class="fas fa-sun" id="theme-icon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    
+    <div class="float-icons-container">
+      <div class="float-icon" style="left: 10%; top: 20%; animation-delay: 0s;">
+        <i class="devicon-dotnetcore-plain"></i>
+      </div>
+      <div class="float-icon" style="left: 85%; top: 15%; animation-delay: 1.5s;">
+        <i class="devicon-csharp-plain"></i>
+      </div>
+      <div class="float-icon" style="left: 15%; top: 70%; animation-delay: 3s;">
+        <i class="devicon-docker-plain"></i>
+      </div>
+      <div class="float-icon" style="left: 80%; top: 75%; animation-delay: 2s;">
+        <i class="devicon-postgresql-plain"></i>
+      </div>
+      <div class="float-icon" style="left: 5%; top: 45%; animation-delay: 2.5s;">
+        <i class="devicon-azure-plain"></i>
+      </div>
+      <div class="float-icon" style="left: 90%; top: 50%; animation-delay: 1s;">
+        <i class="devicon-git-plain"></i>
+      </div>
+    </div>
+    
+    <div class="container hero-content">
+      <div class="hero-text" data-aos="fade-up" data-aos-duration="800">
+        <h1 class="hero-title">Gokul KG</h1>
+        <h2 class="hero-subtitle">.NET Backend Developer</h2>
+        <p class="hero-tagline">Building scalable, secure and high-performance enterprise APIs</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="https://github.com/yourprofile" class="btn btn-secondary" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="section about wave-reveal" data-reveal>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">About Me</h2>
+        <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+          <p class="lead">
+            Senior .NET Core backend developer with 4+ years of experience building robust, secure and scalable APIs for enterprise systems.
+            Specialized in cloud-native architectures, advanced database design, and automated CI/CD pipelines.
+          </p>
+          <p>
+            I specialize in translating complex business requirements into well-structured microservices, optimizing data access
+            with Entity Framework Core, Dapper, and ADO.NET, and ensuring production-ready systems through containerization, observability,
+            and comprehensive testing strategies.
+          </p>
+          <p>
+            My approach combines clean architecture principles, performance optimization, and pragmatic problem-solving to deliver
+            maintainable solutions that scale with business growth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills wave-reveal" data-reveal>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+        <div class="skills-grid">
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="0">
+            <i class="skill-logo devicon-dotnetcore-plain colored"></i>
+            <h3>ASP.NET Core</h3>
+            <p>RESTful API design, middleware pipelines, dependency injection, versioning and API gateway patterns.</p>
+          </article>
+
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="50">
+            <i class="skill-logo devicon-csharp-plain colored"></i>
+            <h3>C#</h3>
+            <p>Modern C# 12+, async/await, LINQ expressions, pattern matching, records and performance-critical code.</p>
+          </article>
+
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+            <i class="skill-logo devicon-dotnetcore-plain colored"></i>
+            <h3>Entity Framework Core</h3>
+            <p>Code-first migrations, query optimization, change tracking, complex mappings and performance tuning.</p>
+          </article>
+
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+            <i class="skill-logo devicon-csharp-plain colored"></i>
+            <h3>LINQ</h3>
+            <p>Expressive queries, projections, deferred execution, query optimization and efficient data transformations.</p>
+          </article>
+
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="skill-logo devicon-dotnetcore-plain colored"></i>
+            <h3>Dapper</h3>
+            <p>High-performance micro ORM, stored procedure mapping, multi-mapping, and optimized data access patterns.</p>
+          </article>
+
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+            <i class="skill-logo devicon-dotnetcore-plain colored"></i>
+            <h3>ADO.NET</h3>
+            <p>Low-level data access, connection pooling, transaction management, and performance-critical database operations.</p>
+          </article>
+
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+            <i class="skill-logo devicon-microsoftsqlserver-plain colored"></i>
+            <h3>SQL Server</h3>
+            <p>T-SQL, stored procedures, query tuning, execution plans, indexing strategies and enterprise transactional systems.</p>
+          </article>
+
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+            <i class="skill-logo devicon-mysql-plain colored"></i>
+            <h3>MySQL</h3>
+            <p>Database design, optimization, replication, and high-availability configurations for web-scale applications.</p>
+          </article>
+
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+            <i class="skill-logo devicon-postgresql-plain colored"></i>
+            <h3>PostgreSQL</h3>
+            <p>Advanced schema design, indexing strategies, JSONB, full-text search and query performance optimization.</p>
+          </article>
+
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="450">
+            <i class="skill-logo fas fa-vial"></i>
+            <h3>Postman</h3>
+            <p>API testing, collection management, automated testing workflows, environment variables and CI/CD integration.</p>
+          </article>
+
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+            <i class="skill-logo fas fa-book"></i>
+            <h3>Swagger / OpenAPI</h3>
+            <p>API documentation, interactive exploration, contract-first design and client SDK generation.</p>
+          </article>
+
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="550">
+            <i class="skill-logo devicon-git-plain colored"></i>
+            <h3>Git</h3>
+            <p>Feature branching, pull request workflows, code reviews, conflict resolution and version control best practices.</p>
+          </article>
+
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+            <i class="skill-logo devicon-docker-plain colored"></i>
+            <h3>Docker</h3>
+            <p>Multi-stage builds, docker-compose, container orchestration, registry management and production deployments.</p>
+          </article>
+
+          <article class="skill-card" data-aos="zoom-in" data-aos-delay="650">
+            <i class="skill-logo fas fa-cloud"></i>
+            <h3>Azure</h3>
+            <p>App Services, Azure SQL, Key Vault, Application Insights, blob storage and cloud-native deployments.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects wave-reveal" data-reveal>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Enterprise Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <span class="project-date">2025 February — 2025 October</span>
+            </div>
+            <h3>Metlone Books</h3>
+            <p class="project-desc">End-to-end SMB business management suite with modules for Accounts, HR, Inventory, Administration, Reports, and Asset management.</p>
+            <div class="project-tags">
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">LINQ</span>
+              <span class="tag">Entity Framework Core</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">Microservices</span>
+              <span class="tag">Docker</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-file-invoice"></i>
+              </div>
+              <span class="project-date">2021 September — 2025 January</span>
+            </div>
+            <h3>Unified LOS</h3>
+            <p class="project-desc">A comprehensive loan origination system enabling multi-department loan processing at Manappuram Finance Limited, improving operational efficiency and workflow automation.</p>
+            <div class="project-tags">
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">LINQ</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Dapper</span>
+              <span class="tag">ADO.NET</span>
+               <span class="tag">Docker</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-users-cog"></i>
+              </div>
+              <span class="project-date">Mar 2023 — Jan 2025</span>
+            </div>
+            <h3>Unified Lead Module</h3>
+            <p class="project-desc">CRM component for capturing and managing leads, automating follow-ups, real-time status tracking, reporting, analytics, and bottleneck identification.</p>
+            <div class="project-tags">
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Entity Framework</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">LINQ</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-plug"></i>
+              </div>
+              <span class="project-date">Mar 2023 — Jan 2025</span>
+            </div>
+            <h3>NGL Connect</h3>
+            <p class="project-desc">.NET Core integration platform for third-party services with secure APIs, real-time sync, and cross-system data accuracy.</p>
+            <div class="project-tags">
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Microservices</span>
+              <span class="tag">Azure</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fas fa-terminal"></i>
+              </div>
+              <span class="project-date">Jan 2024 — Jan 2025</span>
+            </div>
+            <h3>MSME Admin Console Application</h3>
+            <p class="project-desc">Console-based processing system for MSME lead data, reporting, automation, and workflow optimization.</p>
+            <div class="project-tags">
+              <span class="tag">C#</span>
+              <span class="tag">ADO.NET</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Dapper</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience wave-reveal" data-reveal>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Professional Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="0">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Oct 2025 — Present</div>
+              <h3>.NET Core Developer</h3>
+              <h4>Voxel Pvt Ltd</h4>
+              <p>
+                Lead backend development for multiple internal APIs serving 50K+ daily users. Designed data models, improved
+                system throughput by 60%, introduced comprehensive automated testing, and led migration to containerized
+                deployments with zero-downtime strategies.
+              </p>
+              <ul>
+                <li>Architected microservices using ASP.NET Core and Domain-Driven Design principles</li>
+                <li>Optimized database queries reducing response times by 70%</li>
+                <li>Implemented CI/CD pipelines with GitHub Actions and Azure DevOps</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Feb 2025 — Oct 2025</div>
+              <h3>Product Engineer (.NET)</h3>
+              <h4>Gritstone Technologies</h4>
+              <p>
+                Built reporting services and ETL processes handling millions of financial transactions. Collaborated on
+                secure authentication flows, integrated third-party payment providers, and ensured PCI DSS compliance.
+              </p>
+              <ul>
+                <li>Developed RESTful APIs with ASP.NET Core and Entity Framework</li>
+                <li>Implemented JWT-based authentication and authorization</li>
+                <li>Created data migration tools for legacy system modernization</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Sep 2021 — Jan 2025</div>
+              <h3>Software Developer</h3>
+              <h4>Manappuram Finance Ltd (MAFIL)</h4>
+              <p>
+                Developed and maintained enterprise loan origination systems, CRM modules, and integration platforms serving thousands of users across multiple departments.
+              </p>
+              <ul>
+                <li>Built Unified LOS system processing thousands of loan applications monthly</li>
+                <li>Developed Unified Lead Module for lead management and analytics</li>
+                <li>Created NGL Connect integration platform for third-party services</li>
+                <li>Optimized database queries using Dapper and ADO.NET for performance-critical operations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact wave-reveal" data-reveal>
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="50">
+          Open to new opportunities. Available for contract and full-time backend roles.
+        </p>
+        <div class="contact-grid">
+          <a href="mailto:gokulkottilthara21@gmail.com" class="contact-card" data-aos="zoom-in" data-aos-delay="0">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p>gokulkottilthara21@gmail.com</p>
+          </a>
+
+          <a href="https://github.com/yourprofile" class="contact-card" data-aos="zoom-in" data-aos-delay="100" target="_blank" rel="noopener">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <h3>GitHub</h3>
+            <p>github.com/yourprofile</p>
+          </a>
+
+          <a href="https://linkedin.com/in/yourprofile" class="contact-card" data-aos="zoom-in" data-aos-delay="200" target="_blank" rel="noopener">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/yourprofile</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year">2026</span> Gokul KG — .NET Backend Developer</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
